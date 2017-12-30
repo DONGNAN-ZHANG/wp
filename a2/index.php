@@ -1,17 +1,36 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>My Pizza Workshop</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            font-size: 18px;
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: 400;
+            color: #333;
+            line-height: 1.8em;
+        }
+
+        h1 {
+            font-size: 28px;
+        }
+    </style>
+</head>
+
 <body>
-    <header></header>
+    <header>
+    </header>
     <nav></nav>
     <main>
-        <marquee style="color:firebrick;" direction="down" width="100%" height="500" behavior="alternate" style="border:solid">
-            <marquee behavior="alternate">
-                <div><marquee style="color: blue;" direction="up">&uarr;&uarr;&uarr;&uarr;&uarr;&uarr;&uarr;&uarr;&uarr;&uarr;&uarr;&uarr;&uarr;&uarr;&uarr;&uarr;&uarr;&uarr;&uarr;&uarr;&uarr;&uarr;</marquee></div>
-                <main>webpage under construction</main>
-                <div><marquee style="color: blue;" direction="up">&uarr;&uarr;&uarr;&uarr;&uarr;&uarr;&uarr;&uarr;&uarr;&uarr;&uarr;&uarr;&uarr;&uarr;&uarr;&uarr;&uarr;&uarr;&uarr;&uarr;&uarr;&uarr;</marquee></div>
-            </marquee>
-        </marquee>
+        <h1>Webpage under construction, Please be patient....</h1>
     </main>
     <footer></footer>
 </body>
+
 </html>
