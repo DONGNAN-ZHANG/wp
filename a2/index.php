@@ -19,6 +19,20 @@
 
         h1 {
             font-size: 28px;
+            color: #fff;
+        }
+
+        .img-holder {
+            background-image: url("../img/image1.jpeg");
+            background-size: cover;
+            background-position: center;
+            height: 100vh;
+            background-repeat: no-repeat
+        }
+        .container {
+            text-align: center;
+            padding: 10px;
+            /* margin-top: 50px; */
         }
     </style>
 </head>
@@ -28,7 +42,11 @@
     </header>
     <nav></nav>
     <main>
-        <h1>Webpage under construction, Please be patient....</h1>
+        <div class="img-holder">
+            <div class="container">
+                <h1>Webpage under construction, Please be patient....</h1>
+            </div>
+        </div>
     </main>
     <footer></footer>
 </body>
