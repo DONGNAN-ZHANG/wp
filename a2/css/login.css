@@ -12,6 +12,8 @@
 
 .login-form {
     text-align: justify;
+    display: flex;
+    flex-direction: column;
     top: 0;
     left: 0;
     padding: 10px;
@@ -23,6 +25,7 @@
     background-color: transparent;
     /* overflow: hidden; */
     /* color: mediumaquamarine */
+    /* background: red; */
 }
 
 .login-form input {
@@ -39,6 +42,12 @@
     /* background-color: blueviolet; */
 }
 
+.login-form label {
+    display: inline-block;
+}
+
+
+
 .login-form input[type='submit'] {
     width: 100%;
     margin-top:10px;
@@ -49,7 +58,5 @@
 .login-form input[type='submit']:hover {
     border: 1px solid mediumaquamarine;
     color: mediumaquamarine;
-}
-.login-form input[type='password'] {
-    /* display: block; */
+    cursor: pointer;
 }

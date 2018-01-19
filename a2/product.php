@@ -50,7 +50,7 @@
     <main>
         <div class="section product">
             <div class="container">
-                <img src="../../img/veggie.png" alt="veggie" class="product-img" />
+                <img src="../img/veggie.png" alt="veggie" class="product-img" />
                 <aside>
                     <h1>Veggie</h1>
                     <p>Our Veggie recipe is perfect for those who love all the colors of the vegetable spectrum – tomato sauce,

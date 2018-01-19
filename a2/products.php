@@ -53,7 +53,7 @@
             <div class="grid">
                 <div class="card">
                     <div class="img-holder">
-                        <img src="../../img/pepperoni.png" />
+                        <img src="../img/pepperoni.png" />
                     </div>
                     <h1>Pepperoni</h1>
                     <p> Nothing says pizza quite like thin slices of pepperoni, evenly shuffled across a spread of tomato sauce
@@ -61,7 +61,7 @@
                 </div>
                 <div class="card">
                     <div class="img-holder">
-                        <img src="../../img/supreme.png" />
+                        <img src="../img/supreme.png" />
                     </div>
                     <h1>Supreme</h1>
                     <p>For those who like to step things up to the max, our Surpreme is just for you. Unlimited amounts of savory
@@ -69,7 +69,7 @@
                 </div>
                 <div class="card">
                     <div class="img-holder">
-                        <img src="../../img/veggie.png" />
+                        <img src="../img/veggie.png" />
                     </div>
                     <h1>Veggie</h1>
                     <p>Our Veggie recipe is perfect for those who love all the colors of the vegetable spectrum – tomato sauce,
@@ -77,7 +77,7 @@
                 </div>
                 <div class="card">
                     <div class="img-holder">
-                        <img src="../../img/meateater.png" />
+                        <img src="../img/meateater.png" />
                     </div>
                     <h1>Meat Eater</h1>
                     <p>It’s just that our Meat Eater has got a lot going for it – 100% real cheese, pepperoni, ham, beef, sausage.
@@ -85,14 +85,14 @@
                 </div>
                 <div class="card">
                     <div class="img-holder">
-                        <img src="../../img/cheese.png" />
+                        <img src="../img/cheese.png" />
                     </div>
                     <h1>Cheese</h1>
                     <p>100% real cheese, traditional garlic buttery crust, and… well, that’s it. Ah, it’s so liberating!</p>
                 </div>
                 <div class="card">
                     <div class="img-holder">
-                        <img src="../../img/beef.png" />
+                        <img src="../img/beef.png" />
                     </div>
                     <h1>Beef</h1>
                     <p>When cheese needs a little extra to come in and do the heavy lifting, bring on the beef! Pizza Workshop
