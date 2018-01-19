@@ -56,28 +56,32 @@
                         <img src="../../img/pepperoni.png" />
                     </div>
                     <h1>Pepperoni</h1>
-                    <p> Nothing says pizza quite like thin slices of pepperoni, evenly shuffled across a spread of tomato sauce under delicious 100% real cheese surrounded by a traditional garlic buttery crust.</p>
+                    <p> Nothing says pizza quite like thin slices of pepperoni, evenly shuffled across a spread of tomato sauce
+                        under delicious 100% real cheese surrounded by a traditional garlic buttery crust.</p>
                 </div>
                 <div class="card">
                     <div class="img-holder">
                         <img src="../../img/supreme.png" />
                     </div>
                     <h1>Supreme</h1>
-                    <p>For those who like to step things up to the max, our Surpreme is just for you. Unlimited amounts of savory pepperoni, beef, sausage and just the right amount red onions, green peppers, mushrooms… </p>
+                    <p>For those who like to step things up to the max, our Surpreme is just for you. Unlimited amounts of savory
+                        pepperoni, beef, sausage and just the right amount red onions, green peppers, mushrooms… </p>
                 </div>
                 <div class="card">
                     <div class="img-holder">
                         <img src="../../img/veggie.png" />
                     </div>
                     <h1>Veggie</h1>
-                    <p>Our Veggie recipe is perfect for those who love all the colors of the vegetable spectrum – tomato sauce, 100% real cheese, red onions, green peppers, mushrooms and black olives.</p>
+                    <p>Our Veggie recipe is perfect for those who love all the colors of the vegetable spectrum – tomato sauce,
+                        100% real cheese, red onions, green peppers, mushrooms and black olives.</p>
                 </div>
                 <div class="card">
                     <div class="img-holder">
                         <img src="../../img/meateater.png" />
                     </div>
                     <h1>Meat Eater</h1>
-                    <p>It’s just that our Meat Eater has got a lot going for it – 100% real cheese, pepperoni, ham, beef, sausage. It’s a meat lover’s dream come true.</p>
+                    <p>It’s just that our Meat Eater has got a lot going for it – 100% real cheese, pepperoni, ham, beef, sausage.
+                        It’s a meat lover’s dream come true.</p>
                 </div>
                 <div class="card">
                     <div class="img-holder">
@@ -91,11 +95,22 @@
                         <img src="../../img/beef.png" />
                     </div>
                     <h1>Beef</h1>
-                    <p>When cheese needs a little extra to come in and do the heavy lifting, bring on the beef! Pizza Workshop beef is a perfect meaty ingredient cooked with tomato sauce and 100% real cheese surrounded by a garlic butter-smothered crispy crust.</p>
+                    <p>When cheese needs a little extra to come in and do the heavy lifting, bring on the beef! Pizza Workshop
+                        beef is a perfect meaty ingredient cooked with tomato sauce and 100% real cheese surrounded by a
+                        garlic butter-smothered crispy crust.</p>
                 </div>
             </div>
         </div>
     </main>
+    <footer class="footer">
+        <div class="container">
+            <p>
+                Pizza Workshop All rights Reserved &copy; 2018
+            </p>
+            <p>Studnet: Dongnan Zhang</p>
+            <p>ID: 3682306</p>
+        </div>
+    </footer>
 </body>
 
 </html>

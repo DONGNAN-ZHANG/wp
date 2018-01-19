@@ -53,7 +53,9 @@
                 <img src="../../img/veggie.png" alt="veggie" class="product-img" />
                 <aside>
                     <h1>Veggie</h1>
-                    <p>Our Veggie recipe is perfect for those who love all the colors of the vegetable spectrum – tomato sauce, 100% real cheese, red onions, green peppers, mushrooms and black olives.</p>
+                    <p>Our Veggie recipe is perfect for those who love all the colors of the vegetable spectrum – tomato sauce,
+                        100% real cheese, red onions, green peppers, mushrooms and black olives.</p>
+                    <h2>$14.99</h2>
                     <form class="product-form" action="https://titan.csit.rmit.edu.au/~e54061/wp/processing.php?ref=product" method="post">
                         <label for="option">Way of Delivery</label>
                         <select name="option" id="method">
@@ -65,12 +67,21 @@
                         <button id="minus">-</button>
                         <input value=1 name="qty" id="quantity" />
                         <button id="plus">+</button>
-                        <input type="submit" value="add"/>
+                        <input type="submit" value="add" />
                     </form>
                 </aside>
             </div>
         </div>
     </main>
+    <footer class="footer">
+        <div class="container">
+            <p>
+                Pizza Workshop All rights Reserved &copy; 2018
+            </p>
+            <p>Studnet: Dongnan Zhang</p>
+            <p>ID: 3682306</p>
+        </div>
+    </footer>
     <script src="js/product.js"></script>
 </body>
 

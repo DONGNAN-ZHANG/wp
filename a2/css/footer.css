@@ -1,6 +1,6 @@
 .footer {
     width: 100%;
-    min-height: 300px;
+    min-height: 200px;
     text-align: center;
     color: var(--pizza-dough);
     display: flex;

@@ -33,7 +33,11 @@
 
 .product img {
     width: 50%;
+    min-height: 200px;
     box-sizing: border-box;
+}
+.product h2 {
+    margin-top: 20px;
 }
 
 

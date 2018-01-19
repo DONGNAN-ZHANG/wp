@@ -15,7 +15,9 @@
 <body>
     <header class="header">
         <div class="header-text">
-            <h1><a>Pizza workshop</a></h1>
+            <h1>
+                <a>Pizza workshop</a>
+            </h1>
         </div>
         <div class="header-color">
             <div class="header-color-green"></div>
@@ -61,6 +63,15 @@
             </div>
         </section>
     </main>
+    <footer class="footer">
+        <div class="container">
+            <p>
+                Pizza Workshop All rights Reserved &copy; 2018
+            </p>
+            <p>Studnet: Dongnan Zhang</p>
+            <p>ID: 3682306</p>
+        </div>
+    </footer>
     <script src="js/login.js"></script>
 </body>
 
