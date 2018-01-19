@@ -5,29 +5,71 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Product</title>
+    <link href="https://fonts.googleapis.com/css?family=Kaushan+Script|Pangolin" rel="stylesheet">
+    <link href="https://use.fontawesome.com/releases/v5.0.2/css/all.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/index.css">
+    <title>My Pizza Workshop</title>
+
 </head>
 
 <body>
-    <header>
-        <!-- Hold brand logo and page information -->
+    <header class="header">
+        <div class="header-text">
+            <h1>Pizza workshop</h1>
+        </div>
+        <div class="header-color">
+            <div class="header-color-green"></div>
+            <div class="header-color-white"></div>
+            <div class="header-color-red"></div>
+        </div>
     </header>
     <nav class="navbar">
-        <ul class="nav">
-            <li class="nav-item">
-                <a href="">Home</a>
-            </li>
-            <li class="nav-item">
-                <a href="">Products</a>
-            </li>
-            <li class="nav-item">
-                <a href="">About</a>
-            </li>
-            <li class="nav-item">
-                <a href="">Contact</a>
-            </li>
-        </ul>
+        <div class="container">
+            <ul class="nav">
+                <li class="nav-item">
+                    <a href="">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="">Products</a>
+                </li>
+                <li class="nav-item">
+                    <a href="">Gallary</a>
+                </li>
+                <li class="nav-item">
+                    <a href="">About</a>
+                </li>
+                <li class="nav-item">
+                    <a href="">Contact</a>
+                </li>
+                <li class="nav-item">
+                    <a href="">Login</a>
+                </li>
+            </ul>
+        </div>
     </nav>
+    <main>
+        <div class="section product">
+            <div class="container">
+                <img src="../../img/BBQ_Chicken.png" alt="BBQ Chicken" class="product-img" />
+                <aside>
+                    <h1>Product name</h1>
+                    <p>description</p>
+                    <form action="https://titan.csit.rmit.edu.au/~e54061/wp/processing.php?ref=product" method="post">
+                        <select name="option" id="method">
+                            <option value="takeaway">Take Away</option>
+                            <option value="delivery">Delivery</option>
+                        </select>
+                        <input hidden name="id" value="1" />
+                        <input value=1 name="qty" id="quantity" />
+                        <button id="plus">+</button>
+                        <button id="minus">-</button>
+                        <input type="submit" />
+                    </form>
+                </aside>
+            </div>
+        </div>
+    </main>
+    <script src="js/product.js"></script>
 </body>
 
 </html>

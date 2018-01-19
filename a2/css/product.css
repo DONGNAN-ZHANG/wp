@@ -1,0 +1,22 @@
+.product-img img {
+    /* float: left !important; */
+    /* width: 50px !important; */
+    position: relative;
+}
+
+.product img {
+    width: 50%;
+    box-sizing: border-box;
+}
+
+.product aside {
+    float: left;
+    width: 50%;
+    box-sizing: border-box;
+    top: 50%;
+    position: relative; 
+}
+
+/* body {
+    background: red !important;
+} */

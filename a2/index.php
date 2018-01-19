@@ -17,68 +17,68 @@
         <div class="header-text">
             <h1>Pizza workshop</h1>
         </div>
+        <div class="header-color">
+            <div class="header-color-green"></div>
+            <div class="header-color-white"></div>
+            <div class="header-color-red"></div>
+        </div>
     </header>
     <nav class="navbar">
         <div class="container">
-            <hr />
             <ul class="nav">
                 <li class="nav-item">
-                    <a href="">Home</a>
+                    <a href="#">Home</a>
                 </li>
                 <li class="nav-item">
-                    <a href="">Products</a>
+                    <a href="/products">Products</a>
                 </li>
                 <li class="nav-item">
-                    <a href="">Gallary</a>
+                    <a href="/gallary">Gallary</a>
                 </li>
                 <li class="nav-item">
-                    <a href="">About</a>
+                    <a href="/about">About</a>
                 </li>
                 <li class="nav-item">
-                    <a href="">Contact</a>
+                    <a href="/contact">Contact</a>
                 </li>
                 <li class="nav-item">
-                        <a href="">Login</a>
-                    </li>
+                    <a href="/login">Login</a>
+                </li>
             </ul>
-            <hr />
         </div>
     </nav>
     <main>
-        <section class="carousel">
+        <!-- Carousel section -->
+        <section class="section carousel">
             <div class="img img-1">
-                <div class="text-wrap">
-                    <h1>Delicous pizza</h1>
-                    <hr>
-                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
-                </div>
+                <hgroup>
+                    <h1>We Have What You Want</h1>
+                    <h6>The rules of eating out no longer apply, whatever you taste, we serve it up</h6>
+                </hgroup>
             </div>
             <div class="img img-2">
-                <div class="text-wrap">
-                    <h1>Delicous pizza</h1>
-                    <hr>
-                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. </p>
-                </div>
+                <hgroup>
+                    <h1>Naturally Delicious</h1>
+                    <h6>A cool bed of crisp greens, juicy cherry tomato, Crunchy croutons</h6>
+                </hgroup>
             </div>
             <div class="img img-3">
-                <div class="text-wrap">
-                    <h1>Delicouse pizza </h1>
-                    <hr>
-                    <p> </p>
-                </div>
+                <hgroup>
+                    <h1>Flavor Takes Flight</h1>
+                    <h6>How do you make you trip to PizzaWorkshop even better? order online!</h6>
+                </hgroup>
             </div>
             <div class="img img-4">
-                <div class="text-wrap">
-                    <h1>Delicous pizza</h1>
-                    <hr>
-                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. </p>
-                </div>
+                <hgroup>
+                    <h1>Discover Pizza Workshop</h1>
+                    <h6>Weather your are meat lover or vegan believer, Pizza Workshop allways have ways to serve you</h6>
+                </hgroup>
             </div>
+            <div class="controller left" id="left"></div>
+            <div class="controller right" id="right"></div>
         </section>
-        <section class="intro">
-
-        </section>
-        <section class="section">
+        <!-- Feature Section -->
+        <section class="section feature-section">
             <h1 style="padding-bottom: 30px; text-align:center;">Our store provides</h1>
             <div class="feature">
                 <div class="feature-item">
@@ -86,29 +86,29 @@
                     <div class="font-awesome">
                         <i class="fas fa-utensils"></i>
                     </div>
-                    <h3>Dinner</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique, at.</p>
+                    <h3>Diner</h3>
+                    <p>Plenty of tables in store for you to enjoy your lovely night</p>
                 </div>
                 <div class="feature-item">
                     <div class="font-awesome">
                         <i class="fas fa-wifi"></i>
                     </div>
                     <h3>Free WiFi</h3>
-                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cum, id?</p>
+                    <p>24/7 free WiFi keep you allways connect to the world</p>
                 </div>
                 <div class="feature-item">
                     <div class="font-awesome">
                         <i class="fas fa-credit-card"></i>
                     </div>
                     <h3>Credit card accepted</h3>
-                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Animi, nulla.</p>
+                    <p>No cash? No problems, we accept Master Card&reg;, Visa&reg;, and American Express&reg;</p>
                 </div>
                 <div class="feature-item">
                     <div class="font-awesome">
                         <i class="fas fa-truck"></i>
                     </div>
                     <h3>Free Delivery*</h3>
-                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Animi, nulla.</p>
+                    <p>Order 10 pizza in one time, you get it, we have FREE delivery!</p>
                 </div>
             </div>
         </section>
@@ -121,11 +121,14 @@
     <footer class="footer">
         <div class="container">
             <p>
-                Pizza Workshop All Reserved &copy; 2018
+                Pizza Workshop All rights Reserved &copy; 2018
             </p>
+            <p>Studnet: Dongnan Zhang</p>
+            <p>ID: 3682306</p>
         </div>
     </footer>
     <script src="js/main.js"></script>
+    <script src="js/carousel.js"></script>
 </body>
 
 </html>
