@@ -18,7 +18,7 @@
     /* margin-top: 50%; */
     /* margin-left: 50%; */
     margin: 15% auto;
-    width: 50%;
+    width: 40%;
     border:1px mediumaquamarine solid;
     background-color: transparent;
     /* overflow: hidden; */
@@ -26,7 +26,7 @@
 }
 
 .login-form input {
-    display: inline;
+    display: inline-block;
     border: 0;
     padding: 1em 2em;
     margin-bottom: 10px;
@@ -42,8 +42,14 @@
 .login-form input[type='submit'] {
     width: 100%;
     margin-top:10px;
+    border: 1px solid transparent;
+    transition: .5s;
 }
 
+.login-form input[type='submit']:hover {
+    border: 1px solid mediumaquamarine;
+    color: mediumaquamarine;
+}
 .login-form input[type='password'] {
     /* display: block; */
 }

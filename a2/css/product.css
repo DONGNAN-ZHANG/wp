@@ -4,10 +4,39 @@
     position: relative;
 }
 
+.product-form {
+    margin-top: 20px;
+}
+
+.product-form input, .product-form select, .product-form button{
+    border: 0;
+    padding: .5em 1em;
+}
+
+.product-form input, .product-form select {
+    display: inline-block;
+}
+
+.product-form label {
+    display: block;
+}
+.product-form button {
+    display: inline;
+    background-color: mediumaquamarine
+}
+
+.product-form input[type="submit"] {
+    display: block;
+    margin-top: 20px;
+    background-color: mediumaquamarine
+}
+
 .product img {
     width: 50%;
     box-sizing: border-box;
 }
+
+
 
 .product aside {
     float: left;
@@ -17,6 +46,3 @@
     position: relative; 
 }
 
-/* body {
-    background: red !important;
-} */

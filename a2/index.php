@@ -15,7 +15,7 @@
 <body>
     <header class="header">
         <div class="header-text">
-            <h1>Pizza workshop</h1>
+            <h1><a href="#">Pizza workshop</a></h1>
         </div>
         <div class="header-color">
             <div class="header-color-green"></div>
