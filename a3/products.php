@@ -27,19 +27,19 @@
         <div class="container">
             <ul class="nav">
                 <li class="nav-item">
-                    <a href="https://titan.csit.rmit.edu.au/~s3682306/wp/a3">Home</a>
+                    <a href="~s3682306/wp/a3/index.php">Home</a>
                 </li>
                 <li class="nav-item">
-                    <a href="https://titan.csit.rmit.edu.au/~s3682306/wp/a3/products.php">Products</a>
+                    <a href="~s3682306/wp/a3/products.php">Products</a>
                 </li>
                 <li class="nav-item">
-                    <a href="/wp/a3/products.php">Gallary</a>
+                    <a href="">Gallary</a>
                 </li>
                 <li class="nav-item">
-                    <a href="/~s3682306/wp/a3/products.php">About</a>
+                    <a href="">About</a>
                 </li>
                 <li class="nav-item">
-                    <a href="~s3682306/wp/a3/products.php">Contact</a>
+                    <a href="">Contact</a>
                 </li>
                 <li class="nav-item">
                     <a href="">Login</a>
@@ -51,7 +51,7 @@
         <div class="section products">
             <h1>Pizzas</h1>
             <div class="grid">
-                <div class="card">
+                <div class="card" href="~s3682306/wp/a3/product_test.php?pizza=pepperoni">
                     <div class="img-holder">
                         <img src="../img/pepperoni.png" />
                     </div>
