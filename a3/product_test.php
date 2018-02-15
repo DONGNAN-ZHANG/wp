@@ -7,10 +7,8 @@
     <title>Document</title>
 </head>
 <body>
-<?php 
-    $pizza = $_GET["pizza"];
-    echo $pizza;
-?>
+<h3>$_POST contains:</h3>
+<p><?php print_r($_POST); ?></p>
     
 </body>
 </html>
