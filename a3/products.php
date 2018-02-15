@@ -32,8 +32,8 @@
                 <li class="nav-item">
                     <a href="https://titan.csit.rmit.edu.au/~s3682306/wp/a3/products.php">Products</a>
                 </li>
-                <li class="/wp/a3/products.php">
-                    <a href="">Gallary</a>
+                <li class="nav-item">
+                    <a href="/wp/a3/products.php">Gallary</a>
                 </li>
                 <li class="nav-item">
                     <a href="">About</a>
