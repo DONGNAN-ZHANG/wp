@@ -23,17 +23,16 @@
             <div class="header-color-red"></div>
         </div>
     </header>
-    <?php include_once('header.php'); ?>
     <nav class="navbar">
         <div class="container">
             <ul class="nav">
                 <li class="nav-item">
-                    <a href="/">Home</a>
+                    <a href="https://titan.csit.rmit.edu.au/~s3682306/wp/a3">Home</a>
                 </li>
                 <li class="nav-item">
                     <a href="https://titan.csit.rmit.edu.au/~s3682306/wp/a3/products.php">Products</a>
                 </li>
-                <li class="nav-item">
+                <li class="/wp/a3/products.php">
                     <a href="">Gallary</a>
                 </li>
                 <li class="nav-item">
