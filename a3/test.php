@@ -10,6 +10,5 @@
     <?php
         echo "hello there"
     ?>
-
 </body>
 </html>

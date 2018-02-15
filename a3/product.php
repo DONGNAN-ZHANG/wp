@@ -73,6 +73,8 @@
             </div>
         </div>
     </main>
+    <h3>$_POST contains:</h3>
+<p><?php print_r($_POST); ?></p>
     <footer class="footer">
         <div class="container">
             <p>
