@@ -36,10 +36,10 @@
                     <a href="/wp/a3/products.php">Gallary</a>
                 </li>
                 <li class="nav-item">
-                    <a href="">About</a>
+                    <a href="/~s3682306/wp/a3/products.php">About</a>
                 </li>
                 <li class="nav-item">
-                    <a href="">Contact</a>
+                    <a href="~s3682306/wp/a3/products.php">Contact</a>
                 </li>
                 <li class="nav-item">
                     <a href="">Login</a>
