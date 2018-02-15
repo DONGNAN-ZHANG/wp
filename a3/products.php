@@ -30,10 +30,10 @@
                     <a href="index.php">Home</a>
                 </li>
                 <li class="nav-item">
-                    <a href="~s3682306/wp/a3/products.php">Products</a>
+                    <a href="products.php">Products</a>
                 </li>
                 <li class="nav-item">
-                    <a href="">Gallary</a>
+                    <a href="./index.php">Gallary</a>
                 </li>
                 <li class="nav-item">
                     <a href="">About</a>
@@ -51,9 +51,9 @@
         <div class="section products">
             <h1>Pizzas</h1>
             <div class="grid">
-                <div class="card" href="~s3682306/wp/a3/product_test.php?pizza=pepperoni">
+                <div class="card">
                     <div class="img-holder">
-                        <a href="~s3682306/wp/a3/product_test.php?pizza=pepperoni"><img src="../img/pepperoni.png" /></a>
+                        <a href="product_test2.php?pizza=pepperoni"><img src="../img/pepperoni.png" /></a>
                     </div>
                     <h1>Pepperoni</h1>
                     <p> Nothing says pizza quite like thin slices of pepperoni, evenly shuffled across a spread of tomato sauce
