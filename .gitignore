@@ -1,4 +1,6 @@
-a2/index.html
-a2/product.html
-a2/products.html
-a2/login.html
+/a2/index.html
+./a2/product.html
+\a2\products.html
+.\/a2/login.html
+/a2/*
+test
