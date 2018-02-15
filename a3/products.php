@@ -27,7 +27,7 @@
         <div class="container">
             <ul class="nav">
                 <li class="nav-item">
-                    <a href="~s3682306/wp/a3/index.php">Home</a>
+                    <a href="index.php">Home</a>
                 </li>
                 <li class="nav-item">
                     <a href="~s3682306/wp/a3/products.php">Products</a>
