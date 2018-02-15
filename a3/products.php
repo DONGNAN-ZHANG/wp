@@ -53,7 +53,7 @@
             <div class="grid">
                 <div class="card" href="~s3682306/wp/a3/product_test.php?pizza=pepperoni">
                     <div class="img-holder">
-                        <img src="../img/pepperoni.png" />
+                        <a href="~s3682306/wp/a3/product_test.php?pizza=pepperoni"><img src="../img/pepperoni.png" /></a>
                     </div>
                     <h1>Pepperoni</h1>
                     <p> Nothing says pizza quite like thin slices of pepperoni, evenly shuffled across a spread of tomato sauce
