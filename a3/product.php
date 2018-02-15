@@ -11,7 +11,7 @@
     <title>My Pizza Workshop</title>
 
 </head>
-
+<?php session_start(); ?>
 <body>
     <header class="header">
         <div class="header-text">
@@ -74,7 +74,7 @@
         </div>
     </main>
     <h3>$_POST contains:</h3>
-<p><?php print_r($_POST); ?></p>
+    <p><?php print_r($_POST); ?></p>
     <footer class="footer">
         <div class="container">
             <p>
