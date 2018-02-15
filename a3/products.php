@@ -23,6 +23,7 @@
             <div class="header-color-red"></div>
         </div>
     </header>
+    <?php include_once('header.php'); ?>
     <nav class="navbar">
         <div class="container">
             <ul class="nav">
@@ -30,7 +31,7 @@
                     <a href="/">Home</a>
                 </li>
                 <li class="nav-item">
-                    <a href="./~s3682306/wp/a3/products.php">Products</a>
+                    <a href="https://titan.csit.rmit.edu.au/~s3682306/wp/a3/products.php">Products</a>
                 </li>
                 <li class="nav-item">
                     <a href="">Gallary</a>
