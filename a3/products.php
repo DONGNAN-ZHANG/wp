@@ -30,7 +30,7 @@
                     <a href="/">Home</a>
                 </li>
                 <li class="nav-item">
-                    <a href="./products.php">Products</a>
+                    <a href="./~s3682306/wp/a3/products.php">Products</a>
                 </li>
                 <li class="nav-item">
                     <a href="">Gallary</a>
