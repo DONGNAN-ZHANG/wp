@@ -66,7 +66,7 @@
 }
 
 /* hgroud */
-hgroup {
+.hgroup {
     margin-top: 150px;
     margin-right: 120px;
     
@@ -74,21 +74,21 @@ hgroup {
     position: relative;
 }
 
-hgroup h1 {
+.hgroup h1 {
     display: inline-block;
     padding:0 20px;
     border-bottom: 1px white solid;
     box-sizing: border-box;
 }
 
-hgroup h6::after {
+.hgroup h6::after {
     content: '';
     background-color: #f4f4f4;
     padding: 1px;
     animation: typing 1.2s infinite;
 }
 
-hgroup h6 {
+.hgroup h6 {
     margin-top: 9px;
     font-family: var(--font-main);
 }

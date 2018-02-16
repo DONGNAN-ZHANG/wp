@@ -1,3 +1,8 @@
+<?php 
+    session_start();
+    include_once('tools.php');
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -13,42 +18,10 @@
 </head>
 
 <body>
-    <header class="header">
-        <div class="header-text">
-            <h1>
-                <a>Pizza workshop</a>
-            </h1>
-        </div>
-        <div class="header-color">
-            <div class="header-color-green"></div>
-            <div class="header-color-white"></div>
-            <div class="header-color-red"></div>
-        </div>
-    </header>
-    <nav class="navbar">
-        <div class="container">
-            <ul class="nav">
-                <li class="nav-item">
-                    <a href="">Home</a>
-                </li>
-                <li class="nav-item">
-                    <a href="">Products</a>
-                </li>
-                <li class="nav-item">
-                    <a href="">Gallary</a>
-                </li>
-                <li class="nav-item">
-                    <a href="">About</a>
-                </li>
-                <li class="nav-item">
-                    <a href="">Contact</a>
-                </li>
-                <li class="nav-item">
-                    <a href="">Login</a>
-                </li>
-            </ul>
-        </div>
-    </nav>
+    <!-- Inludes common HTML components, page header and nav-bar -->
+    <?php include './components/header.php' ?>
+    <?php require './components/nav.php' ?>
+
     <main>
         <section class="section login">
             <div class="container">
@@ -63,15 +36,10 @@
             </div>
         </section>
     </main>
-    <footer class="footer">
-        <div class="container">
-            <p>
-                Pizza Workshop All rights Reserved &copy; 2018
-            </p>
-            <p>Studnet: Dongnan Zhang</p>
-            <p>ID: 3682306</p>
-        </div>
-    </footer>
+    
+    <!-- Page footer -->
+    <?php require './components/footer.php' ?>
+    
     <script src="js/login.js"></script>
 </body>
 
