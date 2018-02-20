@@ -1,6 +1,7 @@
 <?php 
     session_start();
-    include_once('tools.php');
+    include_once("./debug.php");
+    // include_once("/home/eh1/e54061/public_html/wp/debug.php");
 ?>
 
 <!DOCTYPE html>
@@ -26,28 +27,28 @@
         <!-- Carousel section -->
         <section class="section carousel">
             <div class="img img-1">
-                <hgroup>
+                <div class="hgroup">
                     <h1>We Have What You Want</h1>
                     <h6>The rules of eating out no longer apply, whatever you taste, we serve it up</h6>
-                </hgroup>
+                </div>
             </div>
             <div class="img img-2">
-                <hgroup>
+                <div class="hgroup">
                     <h1>Naturally Delicious</h1>
                     <h6>A cool bed of crisp greens, juicy cherry tomato, Crunchy croutons</h6>
-                </hgroup>
+                </div>
             </div>
             <div class="img img-3">
-                <hgroup>
+                <div class="hgroup">
                     <h1>Flavor Takes Flight</h1>
                     <h6>How do you make you trip to PizzaWorkshop even better? order online!</h6>
-                </hgroup>
+                </div>
             </div>
             <div class="img img-4">
-                <hgroup>
+                <div     class="hgroup">
                     <h1>Discover Pizza Workshop</h1>
                     <h6>Weather your are meat lover or vegan believer, Pizza Workshop allways have ways to serve you</h6>
-                </hgroup>
+                </div>
             </div>
             <div class="controller left" id="left"></div>
             <div class="controller right" id="right"></div>

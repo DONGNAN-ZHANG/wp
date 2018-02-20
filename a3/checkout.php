@@ -1,9 +1,10 @@
 <?php 
     session_start(); 
-    include_once('tools.php');
-    echo "<pre>";
-    print_r($_SESSION);
-    echo "</pre>"
+    // include_once("/home/eh1/e54061/public_html/wp/debug.php");
+    // echo "<pre>";
+    // print_r($_SESSION);
+    // echo "</pre>"
+    include_once("./debug.php");
 ?>
 
 <!DOCTYPE html>
@@ -52,10 +53,11 @@
                     <input type="text" id="mobile" name="mobile" placeholder="Please enter your mobile phone number..." />
                     <label for="credit">Credit Card Number:</label>
                     <?php showError('credit'); ?>
-                    <input type="text" id="credit" name="credit" placeholder="Please enter your credit number..." />
+                    <img src="../img/visa.png" id="visa" style="width: 100px; display: none;"}/>
+                    <input id="credit" type="text" id="credit" name="credit" placeholder="Please enter your credit number..." />
                     <label for="expire">Credit Card Expire date:</label>
                     <?php showError('expire'); ?>
-                    <input type="text" id="expire" name="expire" placeholder="Please enter your credit card expire date like mm/yyyy" />
+                    <input type="text" id="expire" name="expire" placeholder="Please enter your credit card expire date like mm/yy" />
                     <input type="submit" />
                 </form>
             </div>
@@ -64,5 +66,14 @@
 
     <!-- Page footer -->
     <?php require './components/footer.php' ?>
-
+    <script>
+        const input = document.getElementById('credit')
+        const visa = document.getElementById('visa')
+        input.addEventListener('keydown', (e) => {
+            if (e.target.value.slice(0, 4).match(/^4[0-9]{3}/)) {
+                console.log('yes')
+                visa.style.display = 'inline';
+            }
+        })
+    </script>
 </body>

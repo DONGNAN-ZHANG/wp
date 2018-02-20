@@ -1,40 +1,47 @@
 <?php 
     session_start();
-    include_once('tools.php');
+    // include_once("/home/eh1/e54061/public_html/wp/debug.php");
+    // include_once("./debug.php")
+    include_once("./debug.php");
 ?>
 <?php
     // Server side validation
-    if (isset($_POST['id'], $_POST['qty'], $_POST['option'])) {
-        // server side code is required here to check if
-        //  - qty is a positive integer (ie 1 or more)
-        if ((int)$_POST['qty'] <= 0) {
-            // echo "qantity can't not be less 0 or 0";
-            $_SESSION['validation']['cart'] = 'invalid post qty';
-            header("Location: products.php");
-        }
-        //  - product/service id is valid
-        if (!preg_match("/^P00[1-6]/g", $_POST['id'])) {
-            $_SESSION['validation']['cart'] = 'invalid post id';
-            header("Location: products.php");
-        }
-        //  - product/service option is valid
-        if ($_POST['option'] !== "takeaway" && $_POST['option'] !== 'delivery') {
-            $_SESSION['validation']['cart'] = 'invalid post option';
-            header("Location: products.php");
-        }
-
-        // Add qty to items
-        if (isset($_SESSION['cart'][$_POST['id']]['option'])) {
-            $_SESSION['cart'][$_POST['id']]['qty'] = (int)$_POST['qty'] + $_SESSION['cart'][$_POST['id']]['qty'];
+    if ($_SERVER['REQUEST_METHOD'] === 'POST') {
+        if (isset($_POST['id'], $_POST['qty'], $_POST['option'])) {
+            // server side code is required here to check if
+            //  - qty is a positive integer (ie 1 or more)
+            if ((int)$_POST['qty'] <= 0) {
+                // echo "qantity can't not be less 0 or 0";
+                $_SESSION['validation']['cart'] = 'invalid post qty';
+                header("Location: products.php");
+            }
+            //  - product/service id is valid
+            if (!preg_match("/^P00[1-6]/", $_POST['id'])) {
+                $_SESSION['validation']['cart'] = 'invalid post id';
+                header("Location: products.php");
+            }
+            //  - product/service option is valid
+            if ($_POST['option'] !== "takeaway" && $_POST['option'] !== 'delivery') {
+                $_SESSION['validation']['cart'] = 'invalid post option';
+                header("Location: products.php");
+            }
+    
+            // Add qty to items
+            if (isset($_SESSION['cart'][$_POST['id']]['option'])) {
+                $_SESSION['cart'][$_POST['id']]['qty'] = (int)$_POST['qty'] + $_SESSION['cart'][$_POST['id']]['qty'];
+            } else {
+                $_SESSION['cart'][$_POST['id']]['qty'] = (int)$_POST['qty'];
+            }
+    
+            // repeat to add the valid option 
+            $_SESSION['cart'][$_POST['id']]['option'] = $_POST['option'];
+            $_SESSION['cart'][$_POST['id']]['name'] = $_POST['name'];
+            $_SESSION['cart'][$_POST['id']]['price'] = $_POST['price'];
         } else {
-            $_SESSION['cart'][$_POST['id']]['qty'] = (int)$_POST['qty'];
+            $_SESSION['validation']['cart'] = "missing post information";
+            header("Location: products.php");
         }
 
-        // repeat to add the valid option 
-        $_SESSION['cart'][$_POST['id']]['option'] = $_POST['option'];
-    } else {
-        $_SESSION['validation']['cart'] = "missing post information";
-        header("Location: products.php");
     }
 ?>
 

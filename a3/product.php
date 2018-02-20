@@ -1,6 +1,7 @@
 <?php 
     session_start();
-    include_once('tools.php');
+    include_once("./debug.php");
+    //include_once("/home/eh1/e54061/public_html/wp/debug.php");
 ?>
 
 <?php 
@@ -70,6 +71,8 @@
                         </select>
                         <label for="qty">Number of Pizzas</label>
                         <input style="display: none" name="id" value=<?php echo $matchArray[0] ?> />
+                        <input style="display: none" name="price" value=<?php echo $matchArray[4] ?> />
+                        <input style="display: none" name="name" value=<?php echo $matchArray[1] ?> />
                         <button id="minus">-</button>
                         <input value=1 name="qty" id="quantity" />
                         <button id="plus">+</button>

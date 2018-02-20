@@ -1,4 +1,12 @@
-<?php session_start(); ?>
+<?php 
+    session_start();
+    // include_once("/home/eh1/e54061/public_html/wp/debug.php"); 
+    include_once("./debug.php");
+    // echo "<pre>";
+    // print_r($_SESSION);
+    // print_r($_COOKIE);
+    // echo "</pre>"
+?>
 
 <!DOCTYPE html>
 <html lang="en">
@@ -30,7 +38,7 @@
                                 <tr>
                                     <td>
                                         Invoice #: 001
-                                        <br> Created: <?php echo date('j') . ' ' . date('M') . ' ' . date('Y'); ?>
+                                        <br> Created: <?php $date = date('j') . ' ' . date('M') . ' ' . date('Y'); echo $date; ?>
                                     </td>
                                 </tr>
                             </table>
@@ -48,9 +56,9 @@
                                     </td>
 
                                     <td>
-                                        Acme Corp.
-                                        <br> Dongnan Zhang
-                                        <br> test@example.com
+                                        Customer #: <?php echo $_COOKIE['PHPSESSID']; ?>
+                                        <br> <?php echo $_SESSION['user']['name']; ?>
+                                        <br> <?php echo $_SESSION['user']['email']; ?>
                                     </td>
                                 </tr>
                             </table>
@@ -73,7 +81,9 @@
                         </td>
 
                         <td>
-                            1000
+                            <?php 
+                                echo str_pad(substr($_SESSION['user']['credit'], -4), strlen($_SESSION['user']['credit']), '*', STR_PAD_LEFT); 
+                            ?>
                         </td>
                     </tr>
 
@@ -87,48 +97,52 @@
                         </td>
                     </tr>
 
-                    <tr class="item">
-                        <td>
-                            pizza 1
-                        </td>
-
-                        <td>
-                            $300.00
-                        </td>
-                    </tr>
-
-                    <tr class="item">
-                        <td>
-                            pizza 2
-                        </td>
-
-                        <td>
-                            $75.00
-                        </td>
-                    </tr>
-
-                    <tr class="item last">
-                        <td>
-                            pizza 3
-                        </td>
-
-                        <td>
-                            $10.00
-                        </td>
-                    </tr>
+                    <?php
+                        $total = 0;
+                        foreach($_SESSION['cart'] as $key => $value) {
+                            echo '<tr class="item"';
+                            echo '<td>';
+                            echo $value['id'];
+                            echo '</td>';
+                            echo '<td>';
+                            echo $value['name'];
+                            echo '</td>';
+                            echo '<td>';
+                            echo '$' . $value['price'] * $value['qty'];
+                            $total = $value['price'] * $value['qty'] + $total;
+                            echo '</td>';
+                            echo '</tr>';
+                        }
+                    ?>
 
                     <tr class="total">
                         <td></td>
 
                         <td>
-                            Total: $385.00
+                            <?php echo '$' . $total ?>
                         </td>
                     </tr>
                 </table>
             </div>
         </section>
     </main>
+    <?php
+        // Create a file assoiative file 
+        $filename = "orders.csv";
+        $headings = ['Purchase Date', 'Name', 'Address', 'Mobile', 'Email', 'ID', 'Option', 'Quantity', 'Unit Price', 'Subtotal'];
+        $data = '';
+        $fp = fopen($filename, "w");
+        flock($fp, LOCK_EX);
+        fputcsv($fp, $headings);
+        foreach($_SESSION['cart'] as $key => $value) {
+            $data = [$date, $_SESSION['user']['name'], $_SESSION['user']['address'], $_SESSION['user']['mobile'], $_SESSION['user']['email'], $_COOKIE['PHPSESSID'], $value['option'], $value['qty'], $value['price'],  $value['option']*$value['option'] ];
+            fputcsv($fp, $data);
+        }
+        flock($fp, LOCK_UN);
+        fclose($fp);
 
+    ?>
     <!-- Page footer -->
     <?php require './components/footer.php' ?>
+    <a href="./orders.csv">Orders CSV</a>
 </body>

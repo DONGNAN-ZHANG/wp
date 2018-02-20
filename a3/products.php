@@ -1,15 +1,17 @@
 <?php 
     session_start(); 
-    include_once('tools.php');
+    //include_once("/home/eh1/e54061/public_html/wp/debug.php");
     // echo "<pre>";
     // print_r($_SESSION);
     // echo "</pre>"
+    include_once("./debug.php")
 ?>
 <?php 
     // Check if $_POST have cancel attribute
     if (isset($_POST['cancel'])) {
         unset($_SESSION['cart']);
         unset($_SESSION['validation']);
+        unset($_SESSION['user']);
     }
 ?>
 <!DOCTYPE html>
@@ -73,6 +75,6 @@
 
     <!-- Page footer -->
     <?php require './components/footer.php' ?>
-
+    <a href="./products.csv">Products CSV</a>
 </body>
 </html>
