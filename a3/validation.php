@@ -1,6 +1,6 @@
 <?php 
     session_start(); 
-    include_once("./debug.php");
+    
     // include_once("/home/eh1/e54061/public_html/wp/debug.php");
     // if (!isset($_SESSION['validation']['checkout'])) {
     //     $_SESSION['validation']['checkout'] = [];
@@ -87,6 +87,7 @@
         // All passed
         // unset($_SESSION['validation']['checkout']);
         header("Location: receipt.php");
+        include_once("./debug.php");
     } else {
         $_SESSION['validation']['checkout'] = 'Field Missing';
         header("Location: checkout.php");
